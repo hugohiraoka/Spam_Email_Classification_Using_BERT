@@ -23,7 +23,7 @@ In this notebook, we develop a spam email classification model using TensorFlow.
 
 # What is Bert?
 
-![SPAM Email](assets/images/bert1.jpg)
+![SPAM Email](assets/images/bert.jpg)
 
 BERT is a model for natural language processing developed by Google that learns bi-directional representations of text to significantly improve contextual understanding of unlabeled text across many different tasks.
 
