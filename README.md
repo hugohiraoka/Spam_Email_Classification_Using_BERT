@@ -1,5 +1,7 @@
 #Classifying Spam Email using BERT
 
+![SPAM Email](assets/images/spam-email.jpg)
+
 Why do people send out spam email? Often, spam email is sent for commercial purposes. While some people view it as unethical, many businesses still use spam. 
 The cost per email is incredibly low, and businesses can send out mass quantities consistently. Spam email can also be a malicious attempt to gain access to 
 your computer.
@@ -20,6 +22,8 @@ volume email threats.
 In this notebook, we develop a spam email classification model using TensorFlow.
 
 # What is Bert?
+
+![SPAM Email](assets/images/bert1.jpg)
 
 BERT is a model for natural language processing developed by Google that learns bi-directional representations of text to significantly improve contextual understanding of unlabeled text across many different tasks.
 
