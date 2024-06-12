@@ -1,4 +1,4 @@
-#Classifying Spam Email using BERT
+# Classifying Spam Email using BERT
 
 ![SPAM Email](assets/images/spam-email.jpg)
 
