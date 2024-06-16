@@ -5,12 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Classifying SPAM Email using BERT</title>
     <link rel="icon" type="image/png" href="https://i.imgur.com/IUThkpz.png">
-    <link rel="stylesheet" href="style_jp_root.css">
     <link rel="stylesheet" href="style_template.css">
+    <link rel="stylesheet" href="style_jp_root.css">
     <link rel="stylesheet" href="style_jp_nb.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS_CHTML-full,Safe"> </script>
     <script src="template.js"></script>
     <script src="jpnb.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
+
 </head>
 
 <body>
@@ -71,25 +73,34 @@
 
 <div class="menu-opt4-group">
     <a href="https://sites.google.com/view/hugohiraoka/website?authuser=0" class="menu-opt4">
-        <img src="https://i.imgur.com/TcMBiQo.png" alt="menu option 4 logo" width="24" height="24" class="menu-opt4-logo">
-        <span class="menu-opt4-txt">Website</span>
+        <img src="https://i.imgur.com/YtgrvDy.png" alt="menu option 4 logo" width="24" height="24" class="menu-opt4-logo">
+        <span class="menu-opt4-txt">Bio</span>
     </a>
 </div>
 
 <!-- Divider Line -->
 <div class="menu-divider"></div>
 
-<!-- Repositories -->
-
 <div class="menu-opt5-group">
      <a href="#" class="menu-opt5">
-         <img src="https://i.imgur.com/XweAzeK.png" class="menu-repository-logo" alt="menu option 5 logo" width="24" height="24" class="menu-opt5-logo">
-         <span class="menu-repository-txt">Website</span>
+         <span class="menu-repository-txt">List of Repositories</span>
      </a>
+</div>
+
+<div>
      <div class="repositories">
+       <ul id="repositories-list">
          <!-- This is where dynamic content will be added -->
+       </ul>
      </div>
  </div>
+
+<div id="repositories">
+<!-- Repositories -->
+</div>
+
+
+
 
 </div>
 
@@ -353,42 +364,9 @@
 
   <div id="scrollToTop" class="scroll-to-top">
           ↑
-      </div>
+  </div>
 
-      <script>
-             // Function to fetch and process repositories data
-             async function fetchRepositories() {
-                 try {
-                     const response = await fetch('repositories.txt');
-                     const data = await response.text();
-                     const lines = data.split('\n'); // Split by lines
 
-                     // Select the sidenav container
-                     const sidenav = document.getElementById('sidenav');
-
-                     // Loop through each line in the file
-                     lines.forEach(line => {
-                         if (line.trim() !== '') {
-                             const [text, link] = line.split(',').map(item => item.trim());
-
-                             // Create HTML elements for each entry
-                             const entry = document.createElement('a');
-                             entry.href = link;
-                             entry.classList.add('menu-option');
-                             entry.textContent = text;
-
-                             // Append entry to sidenav
-                             sidenav.appendChild(entry);
-                         }
-                     });
-                 } catch (error) {
-                     console.error('Error fetching or parsing repositories:', error);
-                 }
-             }
-
-             // Call fetchRepositories on page load
-             document.addEventListener('DOMContentLoaded', fetchRepositories);
-         </script>
 
 
 </body>

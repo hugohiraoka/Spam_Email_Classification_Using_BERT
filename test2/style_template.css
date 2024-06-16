@@ -81,6 +81,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 30px;
 }
 
 /* GitHub image in sidenav */
@@ -97,7 +98,7 @@ body {
 
 /* Menu option 1 group styling */
 .sidenav .menu-opt1-group {
-    margin-top: 20px; /* Distance from GitHub icon */
+    margin-top: 20px !important; /* Distance from GitHub icon */
     padding-left: 24px; /* Ensure menu_opt1_logo is 24px from left edge of sidenav */
 }
 
@@ -113,6 +114,7 @@ body {
     margin-right: 20px; /* Added margin-right for spacing from the right edge */
     border-radius: 10px; /* Rounded corners for menu option */
     line-height: 16px; /* Adjusted line height */
+
 }
 
 .sidenav .menu-opt1:hover {
@@ -243,14 +245,70 @@ body {
     padding-top: 5px; /* Set same top padding as other menu options */
 }
 
-/** Repositories **/
-/* Style for the repository item image */
+
 
 /* Adjust padding for menu-opt4-group */
 .sidenav .menu-opt5-group {
-    padding-left: 24px;
+    padding-left: 50px;
+    padding-bottom: 20px;
+    margin-bottom: 10px;
 }
-.repositories .repo-item img {
+
+/** Repositories **/
+
+.repositories-list {
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 0; /* Remove default padding */
+    list-style-type: none; /* Remove default list styles */
+
+    /* Ensure consistent alignment and row height with menu-opt2 */
+    display: flex;
+    flex-direction: column;
+}
+
+.repositories-list li {
+    ddisplay: flex;
+    align-items: center;
+    padding: 7px 20px; /* Match padding of menu-opt2 */
+    border-radius: 10px; /* Match rounded corners of menu-opt2 */
+    margin-bottom: 15px; /* Match vertical spacing */
+
+    /* Match font size and color */
+    font-size: 16px;
+    color: #717982;
+}
+
+.repositories-list li img {
+  width: 30px; /* Adjust image size if needed */
+  height: 30px;
+  margin-right: 10px;
+}
+
+.repositories-list li:hover {
+    background-color: #f6f7f8; /* Match hover background color */
+}
+
+.repositories-list li:hover .repo-item {
+    color: #333; /* Adjust text color on hover */
+}
+
+/* Optional: Adjust padding and margins if needed */
+.repositories-list .repo-item {
+    flex: 1; /* Ensure items stretch vertically */
+}
+
+.repositories-list .repo-item a {
+    text-decoration: none; /* Remove underline */
+    color: inherit; /* Inherit text color */
+    display: flex;
+    align-items: center;
+    line-height: 1.5; /* Ensure vertical alignment */
+}
+
+
+
+/*.repositories .repo-item img {
     width: 30px;
     height: 30px;
     margin-right: 10px;
@@ -258,18 +316,33 @@ body {
 }
 
 /* Style for the repository item text */
-.repositories .repo-item span {
+/*.repositories .repo-item span {
     font-size: 16px;
     cursor: pointer;
     color: #717982;
     vertical-align: middle;
-}
+}*/
+/*
+.repositories-list li:hover {
+    background-color: #f6f7f8; /* Match hover background color */
+/*}
 
-/* Hover effect for repository items */
-.repositories .repo-item:hover {
-    background-color: #f6f7f8;
-}
+.repositories-list li:hover .repo-item {
+    color: #333; /* Adjust text color on hover */
+/*}
 
+/* Optional: Adjust padding and margins if needed */
+/*.repositories-list .repo-item {
+    flex: 1; /* Ensure items stretch vertically */
+/*}
+
+.repositories-list .repo-item a {
+    text-decoration: none; /* Remove underline */
+/*    color: inherit; /* Inherit text color */
+/*    display: flex;
+    align-items: center;
+    line-height: 1.5; /* Ensure vertical alignment */
+/*}
 /* End Repositores style */
 
 
@@ -310,3 +383,10 @@ body {
     padding-left: 24px; /* Ensure consistency in padding */
     margin-top: 0; /* Reset any additional margins */
 }
+
+/* CSS for hover effect on li entries */
+       .hovered {
+           background-color: #f6f7f8; /* Example background color on hover */
+           color: #333; /* Example text color on hover */
+           /* Add any other styles for hover effect */
+       }
