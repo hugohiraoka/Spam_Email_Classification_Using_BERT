@@ -43,7 +43,7 @@ document.addEventListener('DOMContentLoaded', function() {
     function fetchRepositoryInfo() {
         console.log("Fetching repository information...");
         //enter location of file. Use file thisrepo.txt
-        fetch('thisrepo.txt') // Replace with your actual URL
+        fetch('test2/thisrepo.txt') // Replace with your actual URL
             .then(response => {
                 if (!response.ok) {
                     throw new Error('Network response was not ok');
@@ -104,7 +104,7 @@ document.addEventListener('DOMContentLoaded', function() {
     function fetchRepositories() {
         console.log("Fetching repositories...");
         // enter location of file. Use repositories.txt
-        fetch('http://localhost:8000/repositories.txt')
+        fetch('test2/repositories.txt')
             .then(response => response.text())
             .then(data => {
                 console.log("File content:", data);
