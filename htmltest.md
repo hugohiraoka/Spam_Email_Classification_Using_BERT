@@ -1,1 +1,1 @@
-[Text](https://htmlpreview.github.io/?https://github.com/hugohiraoka/Classifying_Spam_Email_Using_BERT/blob/main/test2/index.html)
+[Text](https://htmlpreview.github.io/?[https://github.com/hugohiraoka/Spam_Email_Classification_Using_BERT/blob/main/html/Spam_Email_Classification_using_BERT.html)]
