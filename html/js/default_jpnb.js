@@ -44,7 +44,7 @@ document.addEventListener('DOMContentLoaded', function() {
     function fetchRepositoryInfo() {
         console.log("Fetching repository information...");
         //enter location of file. Use file thisrepo.txt
-        fetch('/txt/this_repo.txt') // Replace with your actual URL
+        fetch('/html/txt/this_repo.txt') // Replace with your actual URL
             .then(response => {
                 if (!response.ok) {
                     throw new Error('Network response was not ok');
@@ -110,7 +110,7 @@ document.addEventListener('DOMContentLoaded',function() {
 function fetchPersonalInfo() {
   console.log("Fetching personal info...");
   //enter location of file, Use personal.txt
-  fetch('/txt/personal_info.txt')
+  fetch('/html/txt/personal_info.txt')
   .then(response => {
     if(!response.ok) {
       throw new Error("Network response was not ok");
@@ -197,7 +197,7 @@ document.addEventListener('DOMContentLoaded', function() {
     function fetchRepositories() {
         console.log("Fetching repositories...");
         // enter location of file. Use repositories.txt
-        fetch('/txt/my_repositories.txt')
+        fetch('/html/txt/my_repositories.txt')
             .then(response => response.text())
             .then(data => {
                 console.log("File content:", data);
