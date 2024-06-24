@@ -1,5 +1,7 @@
 # Classifying Spam Email using BERT
 
+Hugo Hiraoka - hhiraoka.w@gmail.com
+
 ![SPAM Email](assets/images/spam-email.jpg)
 
 Why do people send out spam email? Often, spam email is sent for commercial purposes. While some people view it as unethical, many businesses still use spam. 
